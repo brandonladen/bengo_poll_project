@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block content %}
+  <style>
+    /* Custom Styles */
+    body {
+      background-color: #f8f9fa;
+    }
+    .hero-section {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1500x600') no-repeat center center;
+      background-size: cover;
+      color: white;
+      height: 100vh;
+    }
+    .hero-text {
+      padding: 20px;
+      text-align: center;
+    }
+    .footer {
+      padding: 20px 0;
+      text-align: center;
+      background-color: #343a40;
+      color: white;
+    }
+  </style>
+</head>
+  <!-- Hero Section -->
+  <section class="hero-section d-flex justify-content-center align-items-center">
+    <div class="container text-center hero-text">
+      <h1>Welcome to VoteNow</h1>
+      <p>Your voice matters. Participate in voting and make a difference.</p>
+      <a href="{% url 'home' %}" class="btn btn-primary btn-lg mt-4">Vote Now</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2>Why Vote with Us?</h2>
+      <p class="lead">We provide a secure, easy, and transparent platform for voting.</p>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card p-4">
+            <h3>Secure Voting</h3>
+            <p>Your vote is confidential and secure with our advanced encryption technologies.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4">
+            <h3>Easy to Use</h3>
+            <p>Our platform is designed to be user-friendly and accessible to everyone.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4">
+            <h3>Transparent Process</h3>
+            <p>We believe in transparency. Track your vote and ensure its authenticity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+  <!-- Candidates Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Meet the Candidates</h2>
+      <div class="row">
+        <!-- Candidate 1 -->
+        <div class="col-md-4 candidate-card">
+          <div class="card">
+            <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Candidate 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">Running for President</p>
+              <div class="d-grid gap-2">
+                <a href="#" class="btn btn-primary">Vote</a>
+                <a href="#" class="btn btn-outline-secondary">View Manifesto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Candidate 2 -->
+        <div class="col-md-4 candidate-card">
+          <div class="card">
+            <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Candidate 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Jane Smith</h5>
+              <p class="card-text">Running for Vice President</p>
+              <div class="d-grid gap-2">
+                <a href="#" class="btn btn-primary">Vote</a>
+                <a href="#" class="btn btn-outline-secondary">View Manifesto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Candidate 3 -->
+        <div class="col-md-4 candidate-card">
+          <div class="card">
+            <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Candidate 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">Alice Johnson</h5>
+              <p class="card-text">Running for Treasurer</p>
+              <div class="d-grid gap-2">
+                <a href="#" class="btn btn-primary">Vote</a>
+                <a href="#" class="btn btn-outline-secondary">View Manifesto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more candidates as needed -->
+    </div>
+  </section>
+  {% endblock %}

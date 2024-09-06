@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+  <!-- Results Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Voting Results</h2>
+
+      <!-- Candidate 1 Result -->
+      <div class="mb-4">
+        <h5>John Doe - President</h5>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+            65% Votes
+          </div>
+        </div>
+      </div>
+
+      <!-- Candidate 2 Result -->
+      <div class="mb-4">
+        <h5>Jane Smith - Vice President</h5>
+        <div class="progress">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+            45% Votes
+          </div>
+        </div>
+      </div>
+
+      <!-- Candidate 3 Result -->
+      <div class="mb-4">
+        <h5>Alice Johnson - Treasurer</h5>
+        <div class="progress">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            80% Votes
+          </div>
+        </div>
+      </div>
+
+      <!-- Candidate 4 Result -->
+      <div class="mb-4">
+        <h5>Michael Brown - Secretary</h5>
+        <div class="progress">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+            30% Votes
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more candidates as needed -->
+    </div>
+  </section>
+{% endblock %}
